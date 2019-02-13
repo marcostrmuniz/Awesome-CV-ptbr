@@ -1,5 +1,5 @@
 # Awesome-CV-ptbr
-Awesome-CV levemente modificado para o português
+Awesome-CV levemente modificado para o português <br>
 Em breve irei dar uma melhorada neste README.
 
 ## Link do projeto
