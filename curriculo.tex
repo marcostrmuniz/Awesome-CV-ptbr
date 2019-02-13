@@ -1,0 +1,118 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+% Comentários feitos por Marcos Muniz [telegram: @munizm]
+%
+%-------------------------------------------------------------------------------
+% CONFIGURAÇÕES
+%-------------------------------------------------------------------------------
+% papel A4 "a4paper" definido por padrão , use "letterpaper" para modelo de carta EUA.
+\documentclass[12pt, a4paper]{awesome-cv}
+
+% Configura margens das páginas com o comando "\geometry{}"
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\usepackage[portuguese]{babel} % Define pacote de idioma para portugues. Não altere.
+
+% Especifica o diretório onde as fontes estão incluídas
+\fontdir[fonts/]
+
+% Cores dos destaques
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+% Com este comando você pode escolher as cores descritas acimas.
+% Altere somente o segundo bloco.
+%\colorlet{awesome}{awesome-red} % ESTE ESTÁ DESABILITADO
+
+% Com este comando você define uma cor personalizada Exemplo: 000000 = preto; ff0000 = vermelho
+ \definecolor{awesome}{HTML}{000000} % ESTE ESTÁ HABILITADO
+ 
+% ATENÇÃO, PARA OS COMANDOS DE CORES, DEVE-SE DEIXAR SOMENTE 1 ATIVO.
+% PARA REMOVA O "%" PARA O QUAL VOCÊ DESEJA HABILITAR
+% ADICIONE "%" PARA O QUE VOCÊ DESEJA DESABILITAR
+
+% Cores do texto, não acho necessário fazer alterações aqui.
+% Descomente caso você queira especificar alguma cor.
+% \definecolor{darktext}{HTML}{414141}
+ \definecolor{text}{HTML}{000000}%333333
+ \definecolor{graytext}{HTML}{000000}%5D5D5D
+ \definecolor{lighttext}{HTML}{333333}%999999
+
+% Set false if you don't want to highlight section with awesome color
+% Deixe "false" se você não quer destacar a seção com "awesome color" / Utilize "true" para habilitar o destaque de cores.
+\setbool{acvSectionColorHighlight}{false}
+
+
+% Caso você deseje alterar o separador de informação social com o símbulo "|" para algum outro
+% Não vejo necessidade de alterar
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter % Não altere
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{} % Não altere
+\makeatother % Não altere
+
+%-------------------------------------------------------------------------------
+%	INFORMAÇÕES PESSOAIS
+%	Comente quaisquer linhas abaixo que achar desnecessária
+%-------------------------------------------------------------------------------
+% Opções disponíveis: circle|rectangle,edge|noedge,left|right
+% Para remover a foto, comente a linha abaixo
+\photo[circle,noedge,right]{profile}
+\name{Nome}{Sobrenome}
+\position{Cargo pretendido ou título profissional}
+\address{Seu Endereço, nº - Bairro - Cidade/UF}
+
+\mobile{(55 XX) XXXXX-XXXX}
+\email{seu@email.com}
+\homepage{www.seu-site.com}
+\github{github-id}
+\linkedin{linkedin-id}
+\gitlab{gitlab-id}
+\stackoverflow{SO-id}{SO-name}
+\twitter{@twit}
+\skype{skype-id}
+\reddit{reddit-id}
+\extrainfo{Outras informações, telefone fixo, etc}
+
+% REPETINDO, CASO NÃO QUEIRA ALGUMA LINHA ACIMA, COMENTE COM UM "%"
+
+\quote{``Uma citação que goste ou ache inspiradora." - Autor da Citação}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Imprime o cabeçalho com as informações acima
+% Códigos de alinhamento (C: centro, L: esquerda, R: direita)
+\makecvheader[C]
+
+% Imprime o rodapé.
+\makecvfooter
+  {\today} % Insere a data "hoje", dia em que a compilação é feita.
+  {Curriculim Vit\ae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CONTEÚDO DO CURRÍCULO
+%   Cada seção é importada separadamente, abra cada arquivo para modificar o conteúdo.
+%-------------------------------------------------------------------------------
+\input{curriculo/resumo.tex}
+\input{curriculo/formacao_academica.tex}
+\input{curriculo/experiencia.tex}
+\input{curriculo/cursos_treinamentos.tex}
+\input{curriculo/habilidades.tex}
+\input{curriculo/extracurricular.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
